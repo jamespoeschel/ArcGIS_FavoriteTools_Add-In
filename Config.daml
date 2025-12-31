@@ -1,0 +1,84 @@
+﻿<ArcGIS defaultAssembly="MyFavoriteTools.dll" defaultNamespace="MyFavoriteTools" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{d96ae006-62a3-4270-a4d8-6c678a5e06da}" version="1.0" desktopVersion="3.3.52636">
+    <Name>MyFavoriteTools</Name>
+    <Description>MyFavoriteTools description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>02871</Author>
+    <Company>MeadHunt</Company>
+    <Date>3/5/2025 1:42:00 PM</Date>
+    <Subject>Framework</Subject>
+  </AddInInfo>
+  <modules>
+    <insertModule id="MyFavoriteTools_Module" className="Module1" autoLoad="true" caption="Module1">
+      <!-- 
+		<tabs>
+			<tab id="MyFavoriteTools_Tab1" caption="Favorite Tools">
+				<group refID="MyFavoriteTools_Group1"/>
+			</tab>
+		</tabs> 
+		-->
+      <groups>
+        <group id="MyFavoriteTools_Group1" caption="Layout Exports" appearsOnAddInTab="true" keytip="Group1">
+          <button refID="MyFavoriteTools_Button1" />
+          <button refID="MyFavoriteTools_Button2" />
+          <button refID="MyFavoriteTools_Button1" size="large" />
+        </group>
+        <group id="MyFavoriteTools_Group2" caption="Data Exports" appearsOnAddInTab="true" keytip="Group2">
+          <button refID="MyFavoriteTools_Button3" />
+          <button refID="MyFavoriteTools_Button4" />
+        </group>
+        <group id="MyFavoriteTools_Group3" caption="Map Tools" appearsOnAddInTab="true" keytip="Group3">
+          <button refID="MyFavoriteTools_Button5" />
+          <button refID="MyFavoriteTools_Button6" />
+          <button refID="MyFavoriteTools_Button7" />
+          <button refID="MyFavoriteTools_Button8" />
+        </group>
+      </groups>
+      <controls>
+        <button id="MyFavoriteTools_Button1" caption="Export All Layouts" className="Button1" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/VersionManager16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/VersionManager32.png" keytip="ExAL">
+          <tooltip heading="Tooltip Heading">
+					Export All Layouts
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button2" caption="Export Specific Layouts" className="Button2" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/VersionPost-16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/VersionPost-32.png" keytip="ExSL">
+          <tooltip heading="Tooltip Heading">
+					Export Specific Layouts
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button3" caption="Export CSV" className="Button3" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ExportTable16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ExportTable32.png" keytip="ExCSV">
+          <tooltip heading="Tooltip Heading">
+					Export CSV
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button4" caption="Export SHP" className="Button4" loadOnClick="true" smallImage="Images/GeoprocessingTool_ExportSubnetwork_UN_dark.png" largeImage="Images/GeoprocessingTool_ExportSubnetwork_UN_dark.png" keytip="ExSHP">
+          <tooltip heading="Tooltip Heading">
+					Export Shapefile
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button5" caption="Address Geocoder" className="Button5" loadOnClick="true" smallImage="Images/GeoprocessingToolbox_Defense_dark.png" largeImage="Images/GeoprocessingToolbox_Defense_dark.png" keytip="ExBDQ">
+          <tooltip heading="Tooltip Heading">
+					Address Geocoder
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button6" caption="Unique Values to Features" className="Button6" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/UncollapseEntities16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/UncollapseEntities32.png" keytip="UVtF">
+          <tooltip heading="Tooltip Heading">
+					Unique Values to Features
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button7" caption="Extract OSM POIs" className="Button7" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddBAWebAppSites16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddBAWebAppSites32.png" keytip="OSM">
+          <tooltip heading="Tooltip Heading">
+					OSM POI Extraction
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button8" caption="Study Area Spotlight" className="Button8" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SpecularLighting16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SpecularLighting32.png" keytip="SAS">
+          <tooltip heading="Tooltip Heading">
+					Study Area Spotlight
+				</tooltip>
+        </button>
+        <button id="MyFavoriteTools_Button1" caption="Button 1" className="Button1" loadOnClick="true" smallImage="GenericButtonBlue16" largeImage="GenericButtonBlue32">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
